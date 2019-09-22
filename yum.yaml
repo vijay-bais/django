@@ -1,0 +1,5 @@
+- hosts: node2
+  become: yes
+  tasks:
+  - name: Install tree
+    yum: pkg=ansible state=installed update_cache=true
