@@ -2,4 +2,4 @@
   become: yes
   tasks:
   - name: Install tree
-    yum: pkg=ansible state=installed update_cache=true
+    yum: pkg=tree state=installed update_cache=true
