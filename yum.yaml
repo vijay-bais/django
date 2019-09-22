@@ -14,3 +14,5 @@
   tasks:
   - name: Install tree
     yum: pkg=tree state=installed update_cache=true
+  roles:
+  - apache-httpd
