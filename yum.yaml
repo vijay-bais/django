@@ -15,4 +15,5 @@
   - name: Install tree
     yum: pkg=tree state=installed update_cache=true
   roles:
-  - apache-httpd
+#  - apache-httpd
+  - { role: apache-httpd, when: "ansible_os_family == 'RedHat'"}
